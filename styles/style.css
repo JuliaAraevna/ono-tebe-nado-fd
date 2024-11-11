@@ -1,63 +1,59 @@
-.header {
-  /* Стили для шапки */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.header .header-menu {
-  /* Стили для меню в шапке */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
 }
 
-.header .header-links-list {
-  /* Стили для списка ссылок в шапке */
+nav ul {
+    list-style-type: none; 
+    padding: 0;
 }
 
-.header .header-links-list-item {
-  /* Стили для элемента списка ссылок в шапке */
+nav ul li {
+    display: inline; 
+    margin-right: 15px;
 }
 
-.header .header-links-list-item--no-bullet {
-  /* Стили для элемента списка без маркера в шапке */
-}
-
-.header .header-link {
-  /* Стили для обычной ссылки в шапке */
-}
-
-.header .header-link--active {
-  /* Стили для активной ссылки в шапке */
-}
-
-.header .header-logo {
-  /* Стили для логотипа в шапке */
-}
-
-.header .header-logo-image {
-  /* Стили для изображения логотипа */
-}
-
-.header .address {
-  /* Стили для адреса в шапке */
-}
-
-.header .header-address {
-  /* Стили для дополнительных адресных данных в шапке */
-}
-
-main {
-  /* Стили для основного контента */
+nav ul li a {
+    color: white;
+    text-decoration: none;
 }
 
 .cover {
-  /* Стили для блока с обложкой */
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
 }
 
 .lots {
-  /* Стили для блока с лотами */
+    padding: 20px;
+    background-color: #fff;
+}
+
+.lot-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
 }
 
 .about {
-  /* Стили для блока "О нас" */
+    padding: 20px;
+    background-color: #f9f9f9;
 }
 
-.footer {
-  /* Стили для подвала */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
