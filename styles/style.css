@@ -5,7 +5,8 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family:'Railway', Arial, sans-serif;
+    
 }
 
 .header {
@@ -13,12 +14,19 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
+    width: 1100px;
+    height: 3028px;
+    top: -1514px;
+    left: -550px;
+    gap: 0px;
+    opacity: 0px;
 }
 
 .header__logo {
     display: block;
-    height: 50px;
+    height: 105px;
+    width: 1052px;
 }
 
 .header__menu {
@@ -36,7 +44,8 @@ body {
 
 .header__link {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
+     list-style: none;
 }
 
 .header__address {
@@ -46,11 +55,14 @@ body {
 .cover {
     position: relative;
     background-image: url('cover-background.jpg');
-    height: 300px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 20px;
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+    color: white; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
 }
 
 .overlay {
@@ -67,12 +79,21 @@ body {
     position: relative;
     z-index: 2;
     text-align: center;
+     font-size: 22px; 
+    line-height: 28px; 
+    font-weight: bold; 
+    letter-spacing: 0.05em; 
+    margin: 0; 
 }
 
 .cover__description {
     position: relative;
     z-index: 2;
     text-align: center;
+     display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px;
 }
 
 .cover__description-text {
@@ -84,16 +105,23 @@ body {
     border: 2px solid white;
     color: white;
     padding: 10px 20px;
-    cursor: pointer;
+    cursor: pointer; 
+    text-transform: uppercase;
+    font-size: 16px; 
+    font-family: 'Raleway',Arial, sans-serif; 
+    line-height: 25.83px; 
 }
 
 .lots {
-    padding: 20px;
+    padding: 40px 20px;
+    
 }
 
 .lots__heading {
     font-size: 24px;
     margin-bottom: 10px;
+     font-size: 32px; 
+    text-transform: uppercase;
 }
 
 .lots__card-list {
@@ -116,17 +144,47 @@ body {
 
 .card {
     position: relative;
-    height: 200px;
+   min-height: 200px;
     background-color: lightgray;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+
+}
+.card h2 { /* Стили для заголовков в карточках */
+    font-size: 22px; /* Размер шрифта заголовка */
+    line-height: 26.4px; /* Высота строки заголовка */
+    color: #ffffff; /* Цвет текста заголовка */
+    text-transform: uppercase; /* Преобразование текста в верхний регистр */
+    text-decoration: underline; /* Подчеркивание заголовка */
+    margin-left: 10px; /* Отступ слева */
+}
+
+.card p { 
+    font-size: 20px;  
+    line-height: 24px; /* Высота строки текста */
+    color: #ffffff; /* Цвет текста абзаца */
+    margin: 10px 0; 
+}
+
+.card a { /* Стили для ссылок под карточками */
+    font-size: 20px; /* Размер шрифта ссылки */
+    color: #000000; /* Цвет текста ссылки */
+    text-decoration: none; /* Убираем подчеркивание */
+    margin-top: 10px; /* Отступ сверху у ссылки */
+     line-height: 23.48px;
+}
+
+.card a:hover { /* Эффект при наведении на ссылку */
+    text-decoration: underline; /* Подчеркивание при наведении */
 }
 
 .about {
     display: flex;
     justify-content: space-between;
-    margin: 20px 0;
+    margin: 40px 20px ;
 }
 
 .about__column {
@@ -139,13 +197,26 @@ body {
     justify-content: center;
     align-items: center;
 }
+.about h2 { /* Замените h2 на нужный тег заголовка, если нужно */
+    font-size: 40px; /* Размер шрифта заголовка */
+    line-height: 46.96px; /* Высота строки заголовка */
+    
+    margin-bottom: 20px; /* Отступ снизу заголовка */
+}
 
+/* Стили для абзацев текста внутри блока .about */
+.about p {
+    font-size: 20px; /* Размер шрифта абзаца */
+    line-height: 24px; /* Высота строки абзаца */
+    margin-bottom: 20px; /* Отступ снизу абзаца */
+    color: #000000; /* Цвет текста абзаца */
+}
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #f0f0f0;
+    padding: 40px 20px;
+    background-color: #ffffff;
 }
 
 .footer__menu {
@@ -155,13 +226,15 @@ body {
 .footer__social-list {
     list-style: none;
     display: flex;
+    padding: 0;
+    margin: 0;
 }
 
 .footer__social-list-item {
     margin-left: 10px;
 }
 
-.footer__social-icon {
-    width: 24px;
-    height: 24px;
+.images { /* Изменён класс для иконок */
+    width: 48px; /* Изменён размер */
+    height: 48px; /* Изменён размер */
 }
