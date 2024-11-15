@@ -38,9 +38,6 @@ body {
 .header__links-list-item {
     margin-left: 20px;
 }
-.header__links-list-item { 
-    margin-left: 20px; 
-}
 
 /* Сброс маркера для активного элемента */
 .header__links-list-item_active {
