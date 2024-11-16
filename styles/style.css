@@ -42,6 +42,7 @@ body {
 /* Сброс маркера для активного элемента */
 .header__links-list-item_active {
     margin-left: 0;
+    list-style-type: none;
 }
 .header__links-list-item_active .header__link {
     text-decoration: none; /* Убираем подчеркивание только у активного элемента */
@@ -59,66 +60,44 @@ body {
      line-height: 21.13px; 
     font-size: 18px;
 }
-
-.cover {
-    position: relative;
-    background-image: url(../images/cover.jpg);
-    padding: 20px;
-    min-height: 300px;
-    background-size: cover;
-    background-position: center;
-    color: white; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
+.cover { 
+    position: relative; 
+    background-image: url(../images/cover.jpg); 
+    padding: 20px; 
+    min-height: 300px; 
+    background-size: cover; 
+    background-position: center; 
+    color: white;  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
 }
+.card {
+    background-size: cover; /* Покрывает весь блок */
+    background-position: center; /* Центрирование изображения */
+    background-repeat: no-repeat; /* Без повторения изображения */
+    width: 300px; /* Ширина карточки */
+    overflow: hidden; /* Скрыть переполнение */
+    display: flex; /* Флекс-контейнер для выравнивания содержимого */
+    align-items: flex-end; /* Выровнять содержимое по нижнему краю */
+    color: white; /* Цвет текста */
+    position: relative; /* Для абсолютного позиционирования элементов внутри */
+}
+
 .card_type_book {
-    background-image: url('images/card-lot-01.jpg'); /* Заменим на изображение для книги */
-    background-size: cover;        /* Покрывает весь блок */
-    background-position: center;   /* Центрирование изображения */
-    background-repeat: no-repeat;   /* Без повторения изображения */
-    width: 300px;                 /* Ширина карточки */
-    height: 400px;                /* Высота карточки */
-    border: 1px solid #ccc;       /* Обводка карточки */
-    border-radius: 10px;          /* Скругление углов */
-    overflow: hidden;             /* Скрыть переполнение */
-    display: flex;                /* Флекс-контейнер для выравнивания содержимого */
-    align-items: flex-end;        /* Выровнять содержимое по нижнему краю */
-    color: white;                 /* Цвет текста */
-    position: relative;           /* Для абсолютного позиционирования элементов внутри */
+    background-image: url('../images/card-lot-01.jpg'); /* Заменим на изображение для книги */
 }
 
 .card_type_film {
-    background-image: url('images/card-lot-02.jpg'); /* Заменим на изображение для фильма */
-    background-size: cover;        
-    background-position: center;   
-    background-repeat: no-repeat;   
-    width: 300px;                 
-    height: 400px;                
-    border: 1px solid #ccc;       
-    border-radius: 10px;          
-    overflow: hidden;             
-    display: flex;                
-    align-items: flex-end;        
-    color: white;                 
-    position: relative;           
+    background-image: url('../images/card-lot-02.jpg'); /* Заменим на изображение для фильма */
+    border-radius: 10px;
 }
 
 .card_type_picture {
-    background-image: url('images/card-lot-03.jpg'); /* Заменим на изображение для картины */
-    background-size: cover;        
-    background-position: center;   
-    background-repeat: no-repeat;   
-    width: 300px;                 
-    height: 400px;                
-    border: 1px solid #ccc;       
-    border-radius: 10px;          
-    overflow: hidden;             
-    display: flex;                
-    align-items: flex-end;        
-    color: white;                 
-    position: relative;           
-}
+    background-image: url('../images/card-lot-03.jpg'); /* Заменим на изображение для картины */
+    border-radius: 10px;
+}       
+    
 
 /* Пример для добавления текста или других элементов */
 .card_type_book::before,
@@ -139,10 +118,6 @@ body {
 }
 
 /* Пример для заголовка внутри карточки */
-.card_title {
-    padding: 10px; /* Отступ вокруг заголовка */
-    font-weight: bold; /* Жирный текст */
-    text-align: center; /* Центрируем текст */
 }
 .overlay {
     position: absolute;
@@ -161,22 +136,20 @@ body {
     text-align: center; 
     font-family: 'Raleway', sans-serif; 
     font-weight: 400; 
-    font-size: 18px; 
-    line-height: 21.13px; 
-    letter-spacing: 1%; 
+    font-size: 100px; 
+    line-height: 115px; 
+    letter-spacing: 1; 
+}
+.left-align {
+    text-align: left;
 }
 
-.cover__title .left {
-    align-self: flex-start; /* Выравнивание по левому краю */
+.center-align {
+    text-align: center;
 }
 
-.cover__title .center {
-    align-self: center; /* Центрирование */
-}
-
-.cover__title .right {
-    align-self: flex-end; /* Выравнивание по правому краю */
-}
+.right-align {
+    text-align: right;
 }
 
 .cover__description {
@@ -249,16 +222,6 @@ body {
     flex-direction: column;
     padding: 20px;
 
-}
-.card__title {
-    font-size: 22px; /* Размер шрифта заголовка */
-    line-height: 26.4px; /* Высота строки заголовка */
-    color: #ffffff; /* Цвет текста заголовка */
-    text-transform: uppercase; /* Преобразование текста в верхний регистр */
-    text-decoration: underline; /* Подчеркивание заголовка */
-    margin-left: 10px; /* Отступ слева */
-    position: relative; /* Задаём относительное позиционирование */
-    z-index: 10; /* Устанавливаем z-index, чтобы заголовок находился выше других элементов */
 }
 
 .card__overlay {
@@ -356,7 +319,7 @@ body {
 }
 .footer__menu a:first-child {
     text-decoration: none; /* Убираем подчеркивание только у первой ссылки */
-}
+} 
 
 /* Подчеркивание для всех других ссылок */
 .footer__menu a {
