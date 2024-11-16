@@ -11,25 +11,27 @@
 <body>
 
 <header class="header">
-    <nav class="header__nav">
-        <ul class="header__menu"> 
-        </ul>
-    </nav>
-    <a href="#" class="header__link logo">Логотип</a> <!-- Избавились от дива -->
-
-
-    <nav class="header__menu">
-        <ul class="header__links-list">
-            <li class="header__links-list-item header__links-list-item_active"><a href="#" class="header__link">Главная</a></li>
-            <li class="header__links-list-item"><a href="#" class="header__link">Посмотреть лоты</a></li>
-            <li class="header__links-list-item"><a href="#" class="header__link">Об аукционе</a></li>
+    <a href="#" class="header__link logo">
+        <img src="images/logo-blacka.svg" alt="Логотип"> <!-- Замените 'path/to/logo.png' на реальный путь к изображению логотипа -->
+    </a>
     
+    <nav class="header__nav">
+        <ul class="header__menu">
+            <li class="header__menu-item header__menu-item_active">
+                <a href="#" class="header__link">Главная</a>
+            </li>
+            <li class="header__menu-item">
+                <a href="#" class="header__link">Посмотреть лоты</a>
+            </li>
+            <li class="header__menu-item">
+                <a href="#" class="header__link">Об аукционе</a>
+            </li>
         </ul>
     </nav>
     
     <address class="header__address">
         <a href="tel:+99999995555">+9(999)999-55-55</a><br>
-        <a href="mailto:info@sobaka.ge">info@example.com</a>
+        <a href="mailto:info@sobaka.ge">info@example.com</a><br>
          <a href="наб.+Принсенграхт+263-265,+Амстердам">наб.+Принсенграхт+263-265,+Амстердам</a><br>
     </address>
 </header>
@@ -46,8 +48,7 @@
             <p class="cover__description-text">Аукцион вещей,  в которые никто не верит</p>
             <button class="bet-button">Сделать ставку</button>
         </div>
-        <div class="cover">
-    </div>
+    
 </section>
 
 <section class="lots">
@@ -58,11 +59,8 @@
                 <article class="card card_type_film">
                     <div class="overlay"></div>
                     <h3 class="card__title">Фильм режиссера, который бросил  киношколу</h3>
-                    <p class="card__text">Не просто брошка, а ушел с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссер – Пол Томас Андерсон? </p>
+                    <p class="card__text">Не просто бросил, а ушел с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссер – Пол Томас Андерсон? </p>
                 </article>
-                 <div class="card_type_film">
-                 
-                     </div>
             </a>
         </li>
         <li class="lots__card-list-item">
@@ -72,9 +70,6 @@
                     <h3 class="card__title">Книга, где описан скучный день из жизни рекламного агента</h3>
                     <p class="card__text">Объемом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времен. И это все накладывается на эпическую поэмц Гомера. Сколько бы вы поставили на "Улисса" Джеймса Джойса</p>
                 </article>
-                <div class="card_type_book">
-               
-                    </div>
             </a>
         </li>
         <li class="lots__card-list-item">
@@ -84,9 +79,6 @@
                     <h3 class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
                     <p class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков...Сколько бы вы на такое поставили, если бы не знали, что это – одна из революционных работ Кандинского?</p>
                 </article>
-                <div class="card_type_picture">
-               
-                </div>
             </a>
         </li>
     </ul>
@@ -111,7 +103,7 @@
 <footer class="footer">
     <address class="footer__address">
         <a href="tel:+99999995555">+9(999)999-55-55</a><br>
-        <a href="mailto:info@sobaka.ge">info@sobaka.com</a>
+        <a href="mailto:info@sobaka.ge">info@sobaka.com</a><br>
          <a href="наб.+Принсенграхт+263-265,+Амстердам">наб.+Принсенграхт+263-265,+Амстердам</a><br>
     </address>
     <nav class="footer__menu">
