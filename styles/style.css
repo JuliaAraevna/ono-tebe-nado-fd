@@ -118,7 +118,7 @@ body {
 }
 
 /* Пример для заголовка внутри карточки */
-}
+
 .overlay {
     position: absolute;
     top: 0;
@@ -164,7 +164,7 @@ body {
 
 .cover__description-text {
     margin: 10px 0;
-    text-transfrom: uppercase;
+    text-transform: uppercase;
     font-size: 22px;
     line-height: 28px;
 }
@@ -176,9 +176,9 @@ body {
     padding: 10px 20px;
     cursor: pointer; 
     text-transform: uppercase;
-    font-size: 16px; 
     font-family: 'Raleway',Arial, sans-serif; 
-    line-height: 25.83px; 
+    line-height: 25.83px;  
+    font-size: 22px; 
 }
 
 .lots {
@@ -188,7 +188,7 @@ body {
 
 .lots__heading {
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 40px  10px;
      font-size: 32px; 
     text-transform: uppercase;
 }
@@ -218,12 +218,16 @@ body {
     background-color: lightgray;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     padding: 20px;
-
 }
-
+.card__title { 
+    font-size: 22px; /* Размер шрифта заголовка */ 
+    line-height: 26.4px; /* Высота строки заголовка */ 
+    color: #ffffff; /* Цвет текста заголовка */ 
+    text-transform: uppercase; /* Преобразование текста в верхний регистр */ 
+    text-decoration: underline;
+}
 .card__overlay {
     position: absolute; 
     top: 0;
@@ -247,6 +251,7 @@ body {
     font-size: 20px; /* Размер шрифта ссылки */
     color: #000000; /* Цвет текста ссылки */
     text-decoration: underline; /* Подчеркивание текста ссылки */
+     margin-top: 10px;
 }
 .card a:hover { /* Эффект при наведении на ссылку */
     text-decoration: underline; /* Подчеркивание при наведении */
@@ -267,23 +272,22 @@ body {
     display: flex; /* Выравнивание по центру */
     justify-content: center; /* Центрирование по горизонтали */
     align-items: center; /* Центрирование по вертикали */
-    width: 150px; /* Ширина круга */
-    height: 150px; /* Высота круга */
+    width: 240px; /* Ширина круга */
+    height: 240px; /* Высота круга */
     border-radius: 50%; /* Скругление углов для круга */
     background-color: black; /* Цвет фона круга */
-    padding: 10px; /* Отступ между логотипом и краем круга */
+    padding: 40px; /* Отступ между логотипом и краем круга */
 }
 
 .about__logo img {
     max-width: 100%; /* Ограничиваем ширину изображения */
     height: auto; /* Автоматическая высота для соблюдения пропорций */
-    border-radius: 50%; 
 }
 .about h2 { /* Замените h2 на нужный тег заголовка, если нужно */
     font-size: 40px; /* Размер шрифта заголовка */
     line-height: 46.96px; /* Высота строки заголовка */
     text-transform: uppercase;
-    margin-bottom: 20px; /* Отступ снизу заголовка */
+    margin-bottom: 100px; /* Отступ снизу заголовка */
 }
 
 /* Стили для абзацев текста внутри блока .about */
@@ -306,7 +310,11 @@ body {
     font-size: 20px;
     line-height: 24px;
 }
-
+.footer__menu-list {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
 .footer__social-list {
     list-style: none;
     display: flex;
@@ -317,7 +325,7 @@ body {
 .footer__social-list-item {
     margin-left: 10px;
 }
-.footer__menu a:first-child {
+.footer__menu li a:first-child {
     text-decoration: none; /* Убираем подчеркивание только у первой ссылки */
 } 
 
