@@ -59,7 +59,7 @@ body {
     font-style: normal;
     line-height: 21.13px;
     font-size: 18px;
-    width: 110px;
+    width: 237px;
 }
 .cover {
     position: relative;
@@ -95,7 +95,7 @@ body {
 
 .card_type_picture {
     background-image: url("../images/card-lot-03.jpg"); /* Заменим на изображение для картины */
-    border-radius: 10px;
+   
 }
 
 /* Пример для добавления текста или других элементов */
