@@ -5,8 +5,7 @@
 }
 
 body {
-    font-family:'Railway', Arial, sans-serif;
-     
+    font-family: "Railway", Arial, sans-serif;
 }
 
 .header {
@@ -17,7 +16,6 @@ body {
     background-color: #ffffff;
     width: 1100px;
     gap: 0px;
-    
 }
 
 .header__logo {
@@ -30,47 +28,50 @@ body {
     margin-left: 20px;
 }
 
-.header__links-list {
+.header__nav {
     list-style: circle;
     display: flex;
 }
 
-.header__links-list-item {
+.header__menu {
     margin-left: 20px;
 }
 
 /* Сброс маркера для активного элемента */
-.header__links-list-item_active {
+.header__menu-item_active {
     margin-left: 0;
     list-style-type: none;
 }
-.header__links-list-item_active .header__link {
+.header__menu-item_active .header__menu-item_active{
     text-decoration: none; /* Убираем подчеркивание только у активного элемента */
 }
 
 /* Другие стили */
-.header__link {
+.header__link  img {
     text-decoration: underline; /* Подчеркивание по умолчанию для всех ссылок */
     color: #000000;
+    Width: 1100px;
+   Height: 757px;
 }
 
 .header__address {
     text-align: right;
     font-style: normal;
-     line-height: 21.13px; 
+    line-height: 21.13px;
     font-size: 18px;
+    width: 110px;
 }
-.cover { 
-    position: relative; 
-    background-image: url(../images/cover.jpg); 
-    padding: 20px; 
-    min-height: 300px; 
-    background-size: cover; 
-    background-position: center; 
-    color: white;  
-    display: flex;  
-    align-items: center;  
-    justify-content: center;  
+.cover {
+    position: relative;
+    background-image: url(../images/cover.jpg);
+    padding: 20px;
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .card {
     background-size: cover; /* Покрывает весь блок */
@@ -85,26 +86,24 @@ body {
 }
 
 .card_type_book {
-    background-image: url('../images/card-lot-01.jpg'); /* Заменим на изображение для книги */
+    background-image: url("../images/card-lot-01.jpg"); /* Заменим на изображение для книги */
 }
 
 .card_type_film {
-    background-image: url('../images/card-lot-02.jpg'); /* Заменим на изображение для фильма */
-    border-radius: 10px;
+    background-image: url("../images/card-lot-02.jpg"); /* Заменим на изображение для фильма */
 }
 
 .card_type_picture {
-    background-image: url('../images/card-lot-03.jpg'); /* Заменим на изображение для картины */
+    background-image: url("../images/card-lot-03.jpg"); /* Заменим на изображение для картины */
     border-radius: 10px;
-}       
-    
+}
 
 /* Пример для добавления текста или других элементов */
 .card_type_book::before,
 .card_type_film::before,
 .card_type_picture::before {
-    content: " ";  /* Пустое содержимое для создания эффекта наложения */
-    position: absolute; 
+    content: " "; /* Пустое содержимое для создания эффекта наложения */
+    position: absolute;
     bottom: 0; /* Приклеить к нижней части карточки */
     left: 0;
     right: 0;
@@ -130,15 +129,15 @@ body {
 }
 
 .cover__title {
-    display: flex; 
-    flex-direction: column; 
-    align-items: stretch; 
-    text-align: center; 
-    font-family: 'Raleway', sans-serif; 
-    font-weight: 400; 
-    font-size: 100px; 
-    line-height: 115px; 
-    letter-spacing: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 115px;
+    letter-spacing: 1;
 }
 .left-align {
     text-align: left;
@@ -156,9 +155,9 @@ body {
     position: relative;
     z-index: 2;
     text-align: center;
-     display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
@@ -174,22 +173,21 @@ body {
     border: 2px solid white;
     color: white;
     padding: 10px 20px;
-    cursor: pointer; 
+    cursor: pointer;
     text-transform: uppercase;
-    font-family: 'Raleway',Arial, sans-serif; 
-    line-height: 25.83px;  
-    font-size: 22px; 
+    font-family: "Raleway", Arial, sans-serif;
+    line-height: 25.83px;
+    font-size: 22px;
 }
 
 .lots {
     padding: 180px 0px;
-    
 }
 
 .lots__heading {
     font-size: 24px;
-    margin-bottom: 40px  10px;
-     font-size: 32px; 
+    margin-bottom: 40px 10px;
+    font-size: 32px;
     text-transform: uppercase;
 }
 
@@ -214,53 +212,55 @@ body {
 
 .card {
     position: relative;
-   min-height: 200px;
+    min-height: 200px;
     background-color: lightgray;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 20px;
 }
-.card__title { 
-    font-size: 22px; /* Размер шрифта заголовка */ 
-    line-height: 26.4px; /* Высота строки заголовка */ 
-    color: #ffffff; /* Цвет текста заголовка */ 
-    text-transform: uppercase; /* Преобразование текста в верхний регистр */ 
+.card__title {
+    font-size: 22px; /* Размер шрифта заголовка */
+    line-height: 26.4px; /* Высота строки заголовка */
+    color: #ffffff; /* Цвет текста заголовка */
+    text-transform: uppercase; /* Преобразование текста в верхний регистр */
     text-decoration: underline;
 }
 .card__overlay {
-    position: absolute; 
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон оверлея */
-    z-index: 5; 
+    z-index: 5;
 }
 
-.card p { 
-    font-size: 20px;  
+.card p {
+    font-size: 20px;
     line-height: 24px; /* Высота строки текста */
     color: #ffffff; /* Цвет текста абзаца */
-    margin: 10px 0; 
+    margin: 10px 0;
     position: relative;
     z-index: 10;
 }
 
-.lots__look-more-link { /* Стили для ссылки "Посмотреть больше" */
+.lots__look-more-link {
+    /* Стили для ссылки "Посмотреть больше" */
     font-size: 20px; /* Размер шрифта ссылки */
     color: #000000; /* Цвет текста ссылки */
     text-decoration: underline; /* Подчеркивание текста ссылки */
-     margin-top: 10px;
+    margin-top: 10px;
 }
-.card a:hover { /* Эффект при наведении на ссылку */
+.card a:hover {
+    /* Эффект при наведении на ссылку */
     text-decoration: underline; /* Подчеркивание при наведении */
 }
 
 .about {
     display: flex;
     justify-content: space-between;
-    margin: 40px 20px ;
+    margin: 40px 20px;
 }
 
 .about__column {
@@ -283,7 +283,8 @@ body {
     max-width: 100%; /* Ограничиваем ширину изображения */
     height: auto; /* Автоматическая высота для соблюдения пропорций */
 }
-.about h2 { /* Замените h2 на нужный тег заголовка, если нужно */
+.about h2 {
+    /* Замените h2 на нужный тег заголовка, если нужно */
     font-size: 40px; /* Размер шрифта заголовка */
     line-height: 46.96px; /* Высота строки заголовка */
     text-transform: uppercase;
@@ -311,9 +312,9 @@ body {
     line-height: 24px;
 }
 .footer__menu-list {
-    list-style: none; 
-    padding: 0; 
-    margin: 0; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 .footer__social-list {
     list-style: none;
@@ -327,14 +328,15 @@ body {
 }
 .footer__menu li a:first-child {
     text-decoration: none; /* Убираем подчеркивание только у первой ссылки */
-} 
+}
 
 /* Подчеркивание для всех других ссылок */
 .footer__menu a {
     text-decoration: underline; /* Подчеркивание для всех ссылок */
-    color: #000000; 
+    color: #000000;
 }
-.images { /* Изменён класс для иконок */
+.images {
+    /* Изменён класс для иконок */
     width: 48px; /* Изменён размер */
     height: 48px; /* Изменён размер */
 }
