@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 0px;
     background-color: #ffffff;
     width: 1100px;
     gap: 0px;
@@ -25,16 +25,15 @@ body {
 }
 
 .header__menu {
+    display: flex;
     margin-left: 20px;
+    
+    
 }
 
 .header__nav {
     list-style: circle;
-    display: flex;
-}
-
-.header__menu {
-    margin-left: 20px;
+    
 }
 
 /* Сброс маркера для активного элемента */
@@ -48,14 +47,12 @@ body {
 
 /* Другие стили */
 .header__link  img {
-    text-decoration: underline; /* Подчеркивание по умолчанию для всех ссылок */
-    color: #000000;
-    Width: 1100px;
-   Height: 757px;
+    Width: 148px;
+   Height: 105px;
 }
 
 .header__address {
-    text-align: right;
+    text-align: left;
     font-style: normal;
     line-height: 21.13px;
     font-size: 18px;
@@ -64,8 +61,8 @@ body {
 .cover {
     position: relative;
     background-image: url(../images/cover.jpg);
-    padding: 20px;
-    min-height: 300px;
+    height: 1100px;
+    min-height: 757px;
     background-size: cover;
     background-position: center;
     color: white;
@@ -107,13 +104,11 @@ body {
     bottom: 0; /* Приклеить к нижней части карточки */
     left: 0;
     right: 0;
-    height: 40px; /* Высота наложения */
     background: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
     color: white; /* Цвет текста сверху */
     display: flex; /* Используем флекс для выравнивания */
     justify-content: center; /* Центрировать текст по горизонтали */
     align-items: center; /* Центрировать текст по вертикали */
-    font-size: 16px; /* Размер шрифта */
 }
 
 /* Пример для заголовка внутри карточки */
@@ -152,15 +147,15 @@ body {
 }
 
 .cover__description {
+    display: flex;
     position: relative;
     z-index: 2;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 10px;
      margin-top: 20px; /* Добавляем  сверху для сдвига вниз */
     padding: 20px;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .cover__description-text {
@@ -187,9 +182,8 @@ body {
 }
 
 .lots__heading {
-    font-size: 24px;
-    margin: 40px 10px;
-    font-size: 32px;
+    font-size: 40px;
+    margin: 0px 10px;
     text-transform: uppercase;
 }
 
@@ -197,7 +191,8 @@ body {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 25px;
+    margin-bottom: 30px;
 }
 
 .lots__card-list-item {
@@ -210,16 +205,17 @@ body {
     display: block;
     text-decoration: none;
     color: inherit;
+     height: 100%;
 }
 
 .card {
     position: relative;
-    min-height: 200px;
+     min-height: 100%;
     background-color: lightgray;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 20px;
+    padding: 40px;
     width: 100%;
 }
 .card__title {
@@ -307,7 +303,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 20px;
+    padding: 20px 40px;
     background-color: #ffffff;
 }
 
@@ -344,9 +340,10 @@ body {
     font-size: 18px; /* Размер шрифта */
     line-height: 21px; /* Высота строки */
     font-style: normal; /* Нормальное начертание шрифта */
-    max-width: 110px; /* Максимальная ширина */
+    max-width: 237px; /* Максимальная ширина */
     text-align: right; /* Выравнивание текста по правому краю */
     margin: 0; /* Убираем отступы по умолчанию */
+}
 .images {
     /* Изменён класс для иконок */
     width: 48px; /* Изменён размер */
