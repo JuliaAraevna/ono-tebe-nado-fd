@@ -27,13 +27,10 @@ body {
 .header__menu {
     display: flex;
     margin-left: 20px;
-    
-    
 }
 
 .header__nav {
-    list-style: circle;
-    
+    list-style: circle;  
 }
 
 /* Сброс маркера для активного элемента */
@@ -51,13 +48,14 @@ body {
    Height: 105px;
 }
 
-.header__address {
+.address {
     text-align: left;
     font-style: normal;
     line-height: 21.13px;
     font-size: 18px;
     width: 237px;
 }
+
 .cover {
     position: relative;
     background-image: url(../images/cover.jpg);
@@ -70,6 +68,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .card {
     background-size: cover; /* Покрывает весь блок */
     background-position: center; /* Центрирование изображения */
@@ -134,6 +133,7 @@ body {
     line-height: 115px;
     letter-spacing: 1;
 }
+
 .left-align {
     text-align: left;
 }
@@ -178,7 +178,7 @@ body {
 }
 
 .lots {
-    padding: 180px 0px;
+    padding: 180px 20px;
 }
 
 .lots__heading {
@@ -218,6 +218,7 @@ body {
     padding: 40px;
     width: 100%;
 }
+
 .card__title {
     font-size: 22px; /* Размер шрифта заголовка */
     line-height: 26.4px; /* Высота строки заголовка */
@@ -227,6 +228,7 @@ body {
     position: relative; 
     z-index: 10; 
 }
+
 .card__overlay {
     position: absolute;
     top: 0;
@@ -261,7 +263,6 @@ body {
 .about {
     display: flex;
     justify-content: space-between;
-    margin: 40px 20px;
 }
 
 .about__column {
@@ -284,6 +285,7 @@ body {
     max-width: 100%; /* Ограничиваем ширину изображения */
     height: auto; /* Автоматическая высота для соблюдения пропорций */
 }
+
 .about h2 {
     /* Замените h2 на нужный тег заголовка, если нужно */
     font-size: 40px; /* Размер шрифта заголовка */
@@ -299,6 +301,7 @@ body {
     margin-bottom: 20px; /* Отступ снизу абзаца */
     color: #000000; /* Цвет текста абзаца */
 }
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -312,11 +315,13 @@ body {
     font-size: 20px;
     line-height: 24px;
 }
+
 .footer__menu-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
 .footer__social-list {
     list-style: none;
     display: flex;
@@ -336,6 +341,7 @@ body {
     text-decoration: underline; /* Подчеркивание для всех ссылок */
     color: #000000;
 }
+
 .footer__address {
     font-size: 18px; /* Размер шрифта */
     line-height: 21px; /* Высота строки */
@@ -344,6 +350,7 @@ body {
     text-align: right; /* Выравнивание текста по правому краю */
     margin: 0; /* Убираем отступы по умолчанию */
 }
+
 .images {
     /* Изменён класс для иконок */
     width: 48px; /* Изменён размер */
