@@ -27,6 +27,7 @@ body {
 .header__menu {
     display: flex;
     margin-left: 20px;
+    gap: 20px;
 }
 
 .header__nav {
@@ -59,7 +60,6 @@ body {
 .cover {
     position: relative;
     background-image: url(../images/cover.jpg);
-    height: 1100px;
     min-height: 757px;
     background-size: cover;
     background-position: center;
@@ -258,6 +258,7 @@ body {
     color: #000000; /* Цвет текста ссылки */
     text-decoration: underline; /* Подчеркивание текста ссылки */
     margin-top: 10px;
+    margin-left: 40px;
 }
 .card a:hover {
     /* Эффект при наведении на ссылку */
@@ -267,8 +268,9 @@ body {
 .about {
     display: flex;
     justify-content: space-between;
-    gap: 72px 98px;
+    gap: 72px;
     margin-bottom: 140px;
+    padding-left: 40px; 
 }
 
 .about__column {
@@ -333,12 +335,13 @@ body {
     display: flex;
     padding: 0;
     margin: 0;
+    gap: 48px;
 }
 
 .footer__social-list-item {
     margin-left: 10px;
 }
-.footer__menu li a:first-child {
+.footer__menu li :first-child a {
     text-decoration: none; /* Убираем подчеркивание только у первой ссылки */
 }
 
