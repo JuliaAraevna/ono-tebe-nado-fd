@@ -1,1 +1,1 @@
-https://github.com/JuliaAraevna/ono-tebe-nado.git
+https://github.com/JuliaAraevna/ono-tebe-nado-fd
